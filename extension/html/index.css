@@ -1,0 +1,76 @@
+
+html {
+	width: 320px;
+	height: 350px;
+	background-color: #f1f1f1;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.header {
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+	color: #424242;
+	width: 300px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.ligne-header {
+	width: 300px;
+	margin-bottom: 25px;
+}
+
+#img-message-epi {
+	width: 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+#message-epi {
+	font-size: 12px;
+}
+
+#hr-separator {
+	color: #616161;
+	size: 1;
+	margin: 15px 0 0 0;
+}
+
+#logout  {
+	text-align: center;
+	text-decoration: none;
+	margin-left: 110px;
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: #616161;
+}
+
+#info-submit {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	margin-left: 76px;
+}
+
+#auth {
+	margin-left: 72px;
+}
+
+#submit {
+	padding: 6px 0 6px 0;
+	margin: 10px 0 0 100px;
+	font: bold 13px Arial;
+	background: #478bf9;
+	color: #fff;
+	border-radius: 2px;
+	width: 100px;
+	border: none;
+}
+
+#img-auth {
+	width: 200px;
+	margin: 40px 0 0 55px;
+}
