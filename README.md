@@ -14,7 +14,8 @@ This Extension allows you to show your five last notifications send by the intra
   How to use it ?
 =
 
-Google Chrome   -->  You just need to download this project and go on tool/Extension and add an extension.\n
+Google Chrome   -->  You just need to download this project and go on tool/Extension and add an extension.
+
 Mozilla Firefox -->  Coming Soon.
 
 When the Project is added to your navigator, you need to enter your entire auto-login link.
