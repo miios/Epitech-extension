@@ -1,8 +1,8 @@
 # Extension-Chrome-Epitech
 
-================================
+=
   This Project is Open Source.
-================================
+=
 
 The project is open source, you can see all the technologies used and how I used it.
 You can send a pull-request if you add something or if you fix a bug.
