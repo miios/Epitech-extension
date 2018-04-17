@@ -16,12 +16,12 @@
         switch ($http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE)) {
             case 200:
                 $json = json_decode($reponse);
-                $i=0;
+                $a=0;
                 foreach ($json as $key) {
-                    echo "<img src='".$json[$i]->user->picture."' id='img-message-epi'>";
-                    echo "<span id='message-epi'>".$json[$i]->title." • ".$json[$i]->date."</span>";
+                    echo "<img src='".$json[$a]->user->picture."' id='img-message-epi'>";
+                    echo "<span id='message-epi'>".$json[$a]->title." • ".$json[$a]->date."</span>";
                     echo "<br><hr id='hr-separator'><br>";
-                    $i++;
+                    $a++;
                 }
                 break;
             default:
