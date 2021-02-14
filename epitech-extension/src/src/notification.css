@@ -1,0 +1,33 @@
+.notifiPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #015ea4;
+}
+.imgProfile {
+    height: auto;
+    width: auto;
+}
+.bonjour {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 20px;
+}
+.buttonLogout {
+    float: right;
+    margin: auto;
+    margin-right: 20px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 50%;
+    width: auto;
+    cursor: pointer;
+}

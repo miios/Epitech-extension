@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./login.css";
-
-// https://intra.epitech.eu/auth-20a0502b5fd9e6f889f681468717df1707329e12
+import "./notification.css";
 
 async function _onGetInformations(value, setLogin, setError) {
   setLogin(true);
@@ -11,8 +10,16 @@ async function _onGetInformations(value, setLogin, setError) {
   })
   .then(res => res.json())
   .then((res) => {
-    console.log(res);
-    console.log("lll "+res.length);
+    if (Object.keys(res).length !== 0) {
+      console.log(res);
+      res.map((notification) => {
+        console.log(notification.user.picture);
+        console.log(notification.title);
+        console.log(notification.title);
+      })
+    } else {
+      console.log("Aucun nouveau message");
+    }
   })
   .catch(() => {
     setError("Une érreur c'est produite");
@@ -53,23 +60,24 @@ function Login() {
 
   if (!login) {
     return (
-      <div>
-        <img className="imglogo" alt="epi" src="epitech-baseline.png"/>
-        <span>Notifications provider</span>
-        <span><a href="https://intra.epitech.eu/admin/autolog">link</a> auto-login epitech :</span>
-        <input type="text" value={value} onChange={(e) => { setValue(e.target.value) }} />
-        <button onClick={() => { _onGetLog(value, setLogin, setError) }}>login</button>
-        <span>{error}</span>
+      <div className="loginPage">
+        <img className="imgLogo" alt="epi" src="epitech-baseline.png"/>
+        <span className="notifProvider">Notifications provider</span>
+        <span className="titleLink"><a href="https://intra.epitech.eu/admin/autolog" target="_blank">link</a> auto-login epitech :</span>
+        <input className="inputLink" type="text" placeholder="intra.epitech.eu/auth-{YOURID}" value={value} onChange={(e) => { setValue(e.target.value) }} />
+        <button className="buttonLink" onClick={() => { _onGetLog(value, setLogin, setError) }}>login</button>
+        <span className="error">{error}</span>
       </div>
     );
   } else if (login) {
     return (
-      <div>
-        <div>
-          <img alt="student" src={localStorage.getItem('keyAuth') + localStorage.getItem('picture')}/>
-          <span>Bonjour {localStorage.getItem('firstname')}</span>
-          <button onClick={() => { setLogin(false); localStorage.removeItem('keyAuth') }}>logout</button>
+      <div className="notifPage">
+        <div className="navbar">
+          <img className="imgProfile" alt="student" src={localStorage.getItem('keyAuth') + localStorage.getItem('picture')}/>
+          <span className="bonjour">Bonjour {localStorage.getItem('firstname')}</span>
+          <img className="buttonLogout" alt="tuogol" src="logout.png" onClick={() => { setLogin(false); localStorage.removeItem('keyAuth') }}/>
         </div>
+        <span>NOTIFIICA</span>
       </div>
     )
   }
