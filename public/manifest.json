@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "Epitech extension",
-  "description": "A non official Epitech extension which allow you to see your last alert sent by epitech ! Made by Nathan Anné",
-  "version" :"0.11",
+  "name": "Epitech Notifier",
+  "description": "Une extension non officielle qui vous permets de voir vos notifications sans ce rendre sur l'intranet epitech. dites au revoir au 502 bad gateaway ! Par Nathan Anné",
+  "version" :"2.0",
 
   "browser_action": {
     "default_icon": "epitech-logo.png",
     "default_popup": "index.html",
-    "default_title": "Check your notifications"
+    "default_title": "Vérifier vos notifications"
   },
   "icons": {
     "16": "epitech-logo.png",

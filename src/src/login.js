@@ -59,8 +59,8 @@ function Login() {
     return (
       <div className="loginPage">
         <img className="imgLogo" alt="epi" src="epitech-baseline.png"/>
-        <span className="notifProvider">Notifications provider</span>
-        <span className="titleLink"><a href="https://intra.epitech.eu/admin/autolog" target="_blank">link</a> auto-login epitech :</span>
+        <span className="notifProvider">Epitech Notifier</span>
+        <span className="titleLink"><a href="https://intra.epitech.eu/admin/autolog" target="_blank">lien</a> auto-login epitech :</span>
         <input className="inputLink" type="text" placeholder="intra.epitech.eu/auth-{YOURID}" value={value} onChange={(e) => { setValue(e.target.value) }} />
         <button className="buttonLink" onClick={() => { _onGetLog(value, setLogin, setError, setnotif) }}>login</button>
         <span className="error">{error}</span>
