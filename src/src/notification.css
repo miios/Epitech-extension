@@ -8,7 +8,9 @@
     height: 50px;
     display: flex;
     flex-direction: row;
-    background-color: #015ea4;
+    background: linear-gradient(#0062ae, #02508b);
+    -webkit-box-shadow: 0 0 5px 0 #000000;
+    box-shadow: 0 0 5px 0 #000000;
 }
 .imgProfile {
     height: auto;
@@ -30,4 +32,24 @@
     height: 50%;
     width: auto;
     cursor: pointer;
+}
+
+.notification {
+    width: 80%;
+    margin: 5% auto 5% auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.divider {
+    width: 85%;
+    margin: auto;
+}
+.nonew {
+    width: 80%;
+    margin: 10% auto auto auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
 }

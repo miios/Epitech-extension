@@ -1,4 +1,4 @@
-# Extension-Chrome-Epitech
+# Epitech-Extension
 
 
   This Project is Open Source.
