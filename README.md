@@ -1,29 +1,32 @@
 # Epitech-Extension
 
 
-  This Project is Open Source.
+  Il s'agit d'un projet Open source.
 =
 
-The project is open source, you can see all the technologies used and how I used it.
-You can send a pull-request if you add something or if you fix a bug.
+Vous pouvez voir toutes les technologies utilisées dans ce projet et savoir comment je les utilise.
+Vous pouvez également contribuer au projet en envoyant des pull-request si vous corrigiez un bug ou si vous ajoutiez des fonctionnalités.
 
-This project is an Extension Chrome and mozilla for all Epitech student.
-This Extension allows you to show your five last notifications sent by the Epitech intranet.
+Ce projet est une extension Chrome pour tous les étudiants Epitech, elle vous permet de voir vos notifications sans ce connecté sur l'intranet, parfait pour contourner le BAD GATEAWAY !
 
 
   How to use it ?
 =
 
-Google Chrome   -->  You just need to download this project and go on tool/Extension, npm run build on it and add an extension on your chrome. Then select the build version and that's it.
+Pour l'installer, télécharger le projet sur github, puis lancer dans le dossier root "/" du projet: npm run build (il vous faudra node pour l'exécuter). Enfin un dossier "build" devrait apparaître dans ce dernier.
+Rendez-vous maintenant sur votre navigateur et en haut a droit cliquer sur les trois points --> plus d'outils --> extension.
+Cliquez sur charger l'extension non empaquetée et enfin sélectionné le dossier "build".
 
-When the Project is added to your navigator, you need to enter your entire auto-login link.
-You can get it at this adress : ||  https://intra.epitech.eu/admin/autolog.  ||
+Voilà ! Votre extension est prête à l'emploie.
 
 
   How does it work ?
 =
 
-After your connexion, you can choose to logout or see your new 5 notifications.
-To refresh the page, you just need to close the extension page and click on the extension again.
+Lors de votre première utilisation, l'extension va vous demander votre lien d'auto-login, vous pouvez le trouver ici : ||  https://intra.epitech.eu/admin/autolog.  ||
 
-the extension uses cookies, which can permit you to be connected for 1 year.
+Après votre connexion, vous pouvez vous déconnecter à tout moment.
+L'extension vous permet de voir vos nouvelles notifications.
+Pour rafraichir l'extension, il suffit de fermer et rouvrir cette dernière.
+
+L'extension utilise "localstorage", qui vous permet d'être connecté localement sur votre ordinateur.
