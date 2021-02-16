@@ -1,4 +1,4 @@
-# Epitech-Extension
+# Epitech-Notifier
 
 
   Il s'agit d'un projet Open source.
