@@ -14,9 +14,7 @@ This Extension allows you to show your five last notifications sent by the Epite
   How to use it ?
 =
 
-Google Chrome   -->  You just need to download this project and go on tool/Extension and add an extension.
-
-Mozilla Firefox -->  Coming Soon.
+Google Chrome   -->  You just need to download this project and go on tool/Extension, npm run build on it and add an extension on your chrome. Then select the build version and that's it.
 
 When the Project is added to your navigator, you need to enter your entire auto-login link.
 You can get it at this adress : ||  https://intra.epitech.eu/admin/autolog.  ||
