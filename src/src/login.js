@@ -11,7 +11,6 @@ async function _onGetInformations(value, setLogin, setError, setnotif) {
   .then(res => res.json())
   .then((res) => {
     if (Object.keys(res).length !== 0) {
-      console.log(res);
       setnotif(res);
     } else {
       setError("Aucun nouveau message");
